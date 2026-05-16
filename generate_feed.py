@@ -44,7 +44,11 @@ ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = ROOT / "config.json"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; PlaukuosenaFeedBot/1.0; +https://plaukuosena.lt)"
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "lt-LT,lt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
 }
 
 
@@ -71,7 +75,26 @@ def load_config() -> dict[str, Any]:
 
 
 def fetch_text(url: str, timeout: int = 25) -> str:
-    r = requests.get(url, headers=HEADERS, timeout=timeout, verify=False)
+    session = requests.Session()
+
+    r = session.get(
+        url,
+        headers=HEADERS,
+        timeout=timeout,
+        verify=False
+    )
+
+    if r.status_code == 403:
+        alt_headers = HEADERS.copy()
+        alt_headers["Referer"] = "https://www.google.com/"
+
+        r = session.get(
+            url,
+            headers=alt_headers,
+            timeout=timeout,
+            verify=False
+        )
+
     r.raise_for_status()
     return r.text
 
