@@ -1,0 +1,11 @@
+name: Update Kaina24 feed
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Workflow works"
