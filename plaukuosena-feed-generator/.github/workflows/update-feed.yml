@@ -1,0 +1,38 @@
+name: Update Kaina24 feed
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: plaukuosena-feed-generator
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate feed
+        run: python generate_feed.py
+
+      - name: Commit updated feed files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update Kaina24 feed"
+          file_pattern: "plaukuosena-feed-generator/kaina24.xml plaukuosena-feed-generator/products_snapshot.csv plaukuosena-feed-generator/products_snapshot.xlsx"
