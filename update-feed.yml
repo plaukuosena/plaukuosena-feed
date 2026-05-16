@@ -1,0 +1,69 @@
+name: Update and publish Kaina24 feed
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate Kaina24 XML feed
+        run: python generate_feed.py
+
+      - name: Prepare public folder for GitHub Pages
+        run: |
+          mkdir -p public
+          cp kaina24.xml public/kaina24.xml
+          cp products_snapshot.csv public/products_snapshot.csv || true
+          cp products_snapshot.xlsx public/products_snapshot.xlsx || true
+
+      - name: Commit generated feed files back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update Kaina24 feed"
+          file_pattern: "kaina24.xml products_snapshot.csv products_snapshot.xlsx public/kaina24.xml public/products_snapshot.csv public/products_snapshot.xlsx"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
