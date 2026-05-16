@@ -33,7 +33,9 @@ from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
 
+import requests
 requests.packages.urllib3.disable_warnings()
+
 from bs4 import BeautifulSoup
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
