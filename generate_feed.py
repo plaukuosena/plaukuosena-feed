@@ -33,7 +33,7 @@ from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
 
-import requests
+requests.packages.urllib3.disable_warnings()
 from bs4 import BeautifulSoup
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
@@ -69,7 +69,7 @@ def load_config() -> dict[str, Any]:
 
 
 def fetch_text(url: str, timeout: int = 25) -> str:
-    r = requests.get(url, headers=HEADERS, timeout=timeout)
+    r = requests.get(url, headers=HEADERS, timeout=timeout, verify=False)
     r.raise_for_status()
     return r.text
 
