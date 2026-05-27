@@ -57,8 +57,8 @@
     <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
   </product>
   <product>
-    <id>PLK-COLOR-RADIANCE-PRD-NA-C000</id>
-    <sku>PLK-COLOR-RADIANCE-PRD-NA-C000</sku>
+    <id>PLK-COLOR-RADIANCE-PRD-NA</id>
+    <sku>PLK-COLOR-RADIANCE-PRD-NA</sku>
     <title>COLOR RADIANCE kaukÄ</title>
     <description>DaÅ¾ytus plaukus iÅ¡ karto apsaugo nuo blukimo ir spalvos pakitimÅ³. Spalvai suteikia pastebimo, ilgai iÅ¡liekanÄio Å¡vytÄjimo.Kad daÅ¾ytÅ³ plaukÅ³ spalva iÅ¡liktÅ³ tokia pat gaivi ir ryÅ¡ki kaip pirmÄ jÄ dienÄ , plaukÅ³ puoselÄjimui reikia skirti ypatingÄ dÄmesÄ¯. âRadialuxâ mikrojonai ir spalvÄ apsaugantys po...</description>
     <brand />
@@ -85,8 +85,8 @@
     <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
   </product>
   <product>
-    <id>PLK-COLOR-RADIANCE-PRD-NA</id>
-    <sku>PLK-COLOR-RADIANCE-PRD-NA</sku>
+    <id>PLK-COLOR-RADIANCE-PRD-NA-4FA4</id>
+    <sku>PLK-COLOR-RADIANCE-PRD-NA-4FA4</sku>
     <title>COLOR RADIANCE Å¡ampÅ«nas</title>
     <description>IÅ¡ karto padeda apsaugoti daÅ¾ytus plaukus nuo blukimo ir spalvos pakitimÅ³, suteikia ilgai iÅ¡liekantÄ¯ blizgesÄ¯.Kad daÅ¾ytÅ³ plaukÅ³ spalva iÅ¡liktÅ³ tokia pat gaivi ir ryÅ¡ki kaip pirmÄ jÄ dienÄ , plaukÅ³ puoselÄjimui reikia skirti ypatingÄ dÄmesÄ¯. âRadialuxâ mikrojonai ir spalvÄ apsaugantys polimerai ne t...</description>
     <brand />
@@ -385,7 +385,7 @@
     <description>SHARPER CREAM. Kremas skirtas sukurti norimos formos ir struktÅ«ros garbanas. Å is kremas veikia 72val. suteikia garbanotiems plaukams vidutinÄ fiksacijÄ , apibrÄÅ¾tumÄ , padeda graÅ¾iai atskirti garbanas, todÄl jos nepraranda lankstumo ir atrodo natÅ«raliai. SudÄtis praturtinta maitinanÄiais ir kondici...</description>
     <brand />
     <category>American Crew</category>
-    <price>20.00</price>
+    <price>24.00</price>
     <currency>eur</currency>
     <url>https://plaukuosena.lt/eimi-nutricurls-curl-shaper-kremas-2-150-ml</url>
     <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/05eb6823-d484-4232-a92a-05a825b67fc3.jpg</image>
@@ -399,7 +399,7 @@
     <description>FRESH UP. 72 valandas veikiantis purÅ¡kiklis, kurio pagalba iÅ¡vengsite plaukÅ³ vÄlimosi. Tai naujoviÅ¡ka purÅ¡kiamoji priemonÄ, kuri visapusiÅ¡kai apsaugo plaukus nuo iÅ¡oriniÅ³ kenksmingÅ³ faktoriÅ³, atpalaiduoja ir glotnina plaukus. PriemonÄs sudÄtis praturtinta Å¾aliosios arbatos ekstraktu, kuris skatin...</description>
     <brand />
     <category>American Crew</category>
-    <price>20.00</price>
+    <price>24.00</price>
     <currency>eur</currency>
     <url>https://plaukuosena.lt/eimi-nutricurls-fresh-up-purskalas-1-150-ml</url>
     <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/c849de07-4e68-4b6b-b4ed-a59ac843799e.jpg</image>
@@ -1933,6 +1933,202 @@
     <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
   </product>
   <product>
+    <id>DAV-APSAUGIN-SKYSTIS-PRD-NA</id>
+    <sku>DAV-APSAUGIN-SKYSTIS-PRD-NA</sku>
+    <title>DAVINES APSAUGINIS SKYSTIS PLAUKAMS PH: 4 | MELU</title>
+    <description>Skystis plaukams idealiai tinka apsaugoti visÅ³ tipÅ³ plaukus nuo Ä¯tampos, karÅ¡Äio, kurÄ¯ sukelia tiesintuvas ar dÅ¾iovintuvas. âMeluâ purÅ¡kiklis efektyviai apsaugo plaukus nuo karÅ¡Äio.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>36.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/apsauginis-skystis-plaukams-ph-4-or-melu</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/958d66cb-6795-4885-88d2-e4748c0b2e4f.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-BLIZGESY-APSAUGA-PRD-NA</id>
+    <sku>DAV-BLIZGESY-APSAUGA-PRD-NA</sku>
+    <title>DAVINES Blizgesys ir apsauga Å¡viesiems plaukams | Heart of Glass</title>
+    <description>Tai blizgesys ir apsauga Å¡viesiems plaukams, kuris suteikia Å¡vytÄjimo natÅ«raliems ir daÅ¾ytiems Å¡viesiems plaukams.Â StiprinanÄio botaninio skysÄio âHeart of Glass Sheer Glazeâ sudÄtyje yra nauja natÅ«rali veiklioji medÅ¾iaga -Â Fortifying Botanical shield, patentuota âDavines Labsâ laboratorijoje, ku...</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>29.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/blizgesys-ir-apsauga-sviesiems-plaukams-or-heart-of-glass</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/75106ebc-f23c-459b-aebd-1f78c58b78e0.png</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-GEROS-SAVIJAUT-PRD-NA</id>
+    <sku>DAV-GEROS-SAVIJAUT-PRD-NA</sku>
+    <title>DAVINES GEROS SAVIJAUTOS Å AMPÅªNAS PH: 5.5 | WELLâBEING</title>
+    <description>Tai Å¡ampÅ«nas, praturtintas ekstraktais ir baltymais, kurie pasiÅ¾ymi drÄkinamosiomis, apsauginÄmis ir antioksidacinÄmis savybÄmis. PilnavidurÄs ir sodrios putos valo, drÄkina nepakeisdamos plaukÅ³ struktÅ«ros. Å is Å¡ampÅ«nas tinka visÅ³ tipÅ³ plaukams. Taip pat rekomenduojamas naudoti tarp kitÅ³ NATURALT...</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/geros-savijautos-sampunas-ph-55-or-well-being</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/7510575f-99a2-4412-9ed4-4950f2f034fc.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-GREITAI-PLAUKUS-PRD-NA</id>
+    <sku>DAV-GREITAI-PLAUKUS-PRD-NA</sku>
+    <title>DAVINES GREITAI PLAUKUS ATKURIANTI KAUKÄ | THE QUICK FIX CIRCLE</title>
+    <description>Greitai plaukus atkurianti kaukÄ su hialurono rÅ«gÅ¡timi ir raudonuoju moliu drÄkina plaukus ir vos per 3 min. sustabdo jÅ³ vÄlimÄ si, padaro plaukus paklusnius bei Å¡velnius it Å¡ilkas.Idealiai tinka Ä¯vairiÅ³ tipÅ³ plaukams, ypaÄ, jei skubatePapildomas kondicionuojantis poveikisSuteikia papildomos apimt...</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>12.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/greitai-plaukus-atkurianti-kauke-or-the-quick-fix-circle</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/333ee115-9451-4bf1-b2b6-62c9b9b773df.png</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-DAA1-2YT-PH-CON-NA</id>
+    <sku>DAV-DAA1-2YT-PH-CON-NA</sku>
+    <title>DAVINES KONDICIONIERIUS DAÅ½YTIEMS PLAUKAMS PH: 4 | MINU</title>
+    <description>Apsauginis kondicionierius, skirtas daÅ¾ytiems plaukams, kuris suteikia papildomo Å¾vilgesio. Jo formulÄ yra skirta atstatyti daÅ¾ytus plaukus ir padaryti juos Å¡velnius it Å¡ilkas, apsaugant kosmetinÄ spalvÄ bei neapsunkinant paties plauko.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/kondicionierius-dazytiems-plaukams-ph-4-or-minu</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/7ec299ab-4d5e-4428-8acb-1d7b2e351dc6.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-PAA1-2EI-PH-CON-NA</id>
+    <sku>DAV-PAA1-2EI-PH-CON-NA</sku>
+    <title>DAVINES KONDICIONIERIUS PAÅ½EISTIEMS PLAUKAMS PH: 4 | MELU</title>
+    <description>Kondicionierius skirtas ilgiems ar paÅ¾eistiems plaukams. Kondicionavimo priemonÄ drÄkina plaukus, maitina galus ir apsaugo nuo jÅ³ lÅ«Å¾imo. DÄl lengvos formulÄs plaukai tampa glotnÅ«s ir Å¡velnÅ«s, taÄiau neapsunkÄ.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/kondicionierius-pazeistiems-plaukams-ph-4-or-melu</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/27c868d9-4d9f-41dd-b2d1-57259b7ee377.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-TIESINAN-A-PRD-NA</id>
+    <sku>DAV-TIESINAN-A-PRD-NA</sku>
+    <title>DAVINES TIESINANTIS Å AMPÅªNAS PH: 5.3 | LOVE</title>
+    <description>Tiesinantis Å¡ampÅ«nas, skirtas pÅ«stis linkusiems plaukams. FormulÄ pasiÅ¾ymi Å¡velniomis ir kreminÄmis putomis, kurios sukurtos Å¡velniai valyti galvos odÄ , suteikti plaukams glotnumo, Å¾vilgesio ir elastingumo.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/tiesinantis-sampunas-ph-53-or-love</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/7691e5f8-be0d-4245-88b7-bade815e0174.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-VALANTIS-A-PRD-NA</id>
+    <sku>DAV-VALANTIS-A-PRD-NA</sku>
+    <title>DAVINES VALANTIS Å AMPÅªNAS NUO PLEISKANÅ² PH: 4.9 | PURIFYING</title>
+    <description>Tai gydantis, detoksikuojantis Å¡ampÅ«nas kovai su riebiomis ir sausomis pleiskanomis, Sukuriama tinkama aplinka plaukÅ³ augimui, kad plaukai ir galvos oda bÅ«tÅ³ sveiki, oda giliai iÅ¡valyta, nesukeliant jokio dirginimo. SudÄtyje esantis seleno disulfidas turi stiprÅ³ antibakterinÄ¯ poveikÄ¯.Â Tai produkt...</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/valantis-sampunas-nuo-pleiskanu-ph-49-or-purifying</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/d4d74325-9146-4a5a-9026-794f20ec97be.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-A-AMPAANAS-PRD-NA-E1B3</id>
+    <sku>DAV-A-AMPAANAS-PRD-NA-E1B3</sku>
+    <title>DAVINES Å AMPÅªNAS DAÅ½YTIEMS PLAUKAMS PH: 5.3 | MINU</title>
+    <description>Tai apsauginis Å¡ampÅ«nas, skirtas daÅ¾ytiems plaukams. Jo formulÄ pasiÅ¾ymi sodriomis ir pilnavidurÄmis putomis, Å¡velniai valo galvos odÄ , apsaugodama spalvÄ ir ilgiau iÅ¡laikant plaukÅ³ blizgesÄ¯.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/sampunas-dazytiems-plaukams-ph-53-or-minu</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/6a542969-9c0b-4be9-8aba-c7a8bd9ade42.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-A-AMPAANAS-PRD-NA-5E04</id>
+    <sku>DAV-A-AMPAANAS-PRD-NA-5E04</sku>
+    <title>DAVINES Å AMPÅªNAS GARBANUOTIEMS PLAUKAMS PH: 5.3 | LOVE CURL</title>
+    <description>Å is papildomas Å¡ampÅ«nas garbanotiems arba banguotiems plaukams, pasiÅ¾ymintis kremine tekstÅ«ra, suteikia plaukams elastingumo. DÄl savo elastingumÄ suteikianÄios formulÄs jis Å¡velniai valo plaukus, palikdamas juos minkÅ¡tus ir lengvus, iÅ¡ryÅ¡kina apimtÄ¯ bei suteikia Å¾vilgesio, nepaÅ¾eisdamas natÅ«rali...</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>39.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/davines-sampunas-garbanuotiems-plaukams-ph-53-or-love-curl</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/abd9f475-8e18-4122-854e-e9807ba878f6.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-A-AMPAANAS-PRD-NA-2479</id>
+    <sku>DAV-A-AMPAANAS-PRD-NA-2479</sku>
+    <title>DAVINES Å AMPÅªNAS PAÅ½EISTIEMS PLAUKAMS PH: 5.3 | MELU</title>
+    <description>Tai elastingumo suteikiantis Å¡ampÅ«nas, kuris apsaugo nuo lÅ«Å¾inÄjimo ilgusÂ ar paÅ¾eistus plaukus. FormulÄ pasiÅ¾yminti Å¡velniomis ir kreminÄmis putomis, skirta Å¡velniai valyti galvos odÄ , o plaukams suteikia Å¾vilgesio, Å¡velnumo bei purumo.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/sampunas-pazeistiems-plaukams-ph-53-or-melu</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/9e665e1f-46f0-43ad-a545-d89ee5dbd7d5.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-A-AMPAANAS-PRD-NA</id>
+    <sku>DAV-A-AMPAANAS-PRD-NA</sku>
+    <title>DAVINES Å AMPÅªNAS PLAUKÅ² GAUSINIMUI PH: 5.3 | VOLU</title>
+    <description>ApimtÄ¯ didinantis Å¡ampÅ«nas ploniems plaukams. Jis Å¡velniai valo galvos odÄ , suteikdamas jiems Å¡velnumo bei lengvumo. Kartu plaukai Ä¯gauna tekstÅ«ros ir didesnÄs apimties.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>21.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/sampunas-plauku-gausinimui-ph-53-or-volu</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/a13b2f02-8b1b-4288-9602-b6b3af8b7c0a.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-A-VIESIUS-CON-100ML</id>
+    <sku>DAV-A-VIESIUS-CON-100ML</sku>
+    <title>DAVINES Å viesius plaukus maitinantis kondicionierius | Heart of Glass</title>
+    <description>The product description should talk about the product in a truthful yet flattering way. Remember to include information that the potential buyer would need, for example details on sizing, color, and function. Volume: 100 ml</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>29.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/hand-soap-giguos</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/729b8d37-dea5-416e-a920-52cc0231c3bb.png</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
+    <id>DAV-A-VIESIUS-PRD-NA</id>
+    <sku>DAV-A-VIESIUS-PRD-NA</sku>
+    <title>DAVINES Å viesius plaukus stiprinanti kaukÄ | Heart of Glass</title>
+    <description>Tai natÅ«raliems ir daÅ¾ytiems Å¡viesiems plaukams skirta kaukÄ, kuri intensyviai maitina bei stiprina plaukus, apsaugo juos nuo lÅ«Å¾inÄjimo, Biacidic Bond komplekso ir baobabo ekstrakto dÄka. Taip pat su Å¡ia kauke uÅ¾tikrinama lengvesnÄ plaukÅ³ kontrolÄ.</description>
+    <brand>Davines</brand>
+    <category>American Crew</category>
+    <price>36.00</price>
+    <currency>eur</currency>
+    <url>https://plaukuosena.lt/sviesius-plaukus-stiprinanti-kauke-or-heart-of-glass</url>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/7062fec7-9648-4348-95e4-b6109a41426c.webp</image>
+    <availability>in_stock</availability>
+    <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
+  </product>
+  <product>
     <id>KAD-PROFESSI-DEEP-CON-250ML</id>
     <sku>KAD-PROFESSI-DEEP-CON-250ML</sku>
     <title>KADUS PROFESSIONAL DEEP MOISTURE LEAVE-IN purÅ¡kiamas kondicionierius, 250 ml</title>
@@ -2387,24 +2583,24 @@
     <description>Subalansuota ir priÅ¾iÅ«rÄta galvos oda su Invigo Scalp Balance Sensitive kauke, skirta jautriai galvos odais ir priÅ¾iÅ«rÄti. Praturtinta energizuojanÄia formule su gaivinanÄiais ingredientais, Ä¯skaitant alantoinÄ , kuris pastebimai ramina. Å i plaukÅ³ kaukÄ yra Å¡velni odai ir be kvapÅ³, todÄl idealiai ...</description>
     <brand>Wella Professionals</brand>
     <category>American Crew</category>
-    <price>22.00</price>
+    <price>25.00</price>
     <currency>eur</currency>
     <url>https://plaukuosena.lt/invigo-scalp-balance-raminanti-bekvape-kauke-jautriai-galvos-odai-150-ml</url>
-    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/c54a7db1-876d-428e-bb1c-2163064b83e8.jpg</image>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/2afb2854-6bd1-40cf-8cdc-974055d4e6d7.jpg</image>
     <availability>in_stock</availability>
     <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
   </product>
   <product>
     <id>WEL-INVIGO-SCALP-PRD-300ML</id>
     <sku>WEL-INVIGO-SCALP-PRD-300ML</sku>
-    <title>WELLA PROFESSIONALS INVIGO SCALP BALANCE raminantis bekvapis Å¡ampÅ«nas jautriai galvos odai, 300 ml</title>
+    <title>WELLA PROFESSIONALS INVIGO SCALP BALANCE raminantis bekvapis Å¡ampÅ«nas jautriai galvos odai, 300 ml |1000 ml</title>
     <description>Raminamasis bekvapis Å¡ampÅ«nas slopina nieÅ¾ÄjimÄ ir Å¡velniai puoselÄja jautriÄ , sudirgusiÄ galvos odÄ .- KRUOPÅ ÄIAI ATRINKTI INGREDIENTAI. Veiksmingai ramina galvos odÄ , suteikia plaukams energijos. Linijos sudÄtyje yra ypatingÅ³ puoselÄjamÅ³jÅ³ ingredientÅ³, skirtÅ³ specifinÄms problemoms sprÄsti (loto...</description>
     <brand>Wella Professionals</brand>
     <category>American Crew</category>
-    <price>18.00</price>
+    <price>22.00</price>
     <currency>eur</currency>
     <url>https://plaukuosena.lt/invigo-scalp-balance-raminantis-bekvapis-sampunas-jautriai-galvos-odai-300-ml</url>
-    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/1cb4e319-989b-4b53-97f4-6c8d6f9956f4.jpg</image>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/d760b01d-97b7-44c5-a495-8a1f29726f57.jpg</image>
     <availability>in_stock</availability>
     <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
   </product>
@@ -2415,10 +2611,10 @@
     <description>Stipraus poveikio raminamasis Å¡ampÅ«nas kovoja su pleiskanomis ir Å¡alina nuo galvos matomus Å¾vynelius, palikdamas neÄ¯tikÄtinos Å¡varos ir nepralenkiamos gaivos pojÅ«tÄ¯.- KRUOPÅ ÄIAI ATRINKTI INGREDIENTAI. Veiksmingai ramina galvos odÄ , suteikia plaukams energijos. Linijos sudÄtyje yra ypatingÅ³ puosel...</description>
     <brand>Wella Professionals</brand>
     <category>American Crew</category>
-    <price>18.00</price>
+    <price>22.00</price>
     <currency>eur</currency>
     <url>https://plaukuosena.lt/invigo-scalp-balance-sampunas-nuo-pleiskanu-300-ml</url>
-    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/a577bacb-27b2-4dca-bf06-bf92b1ae30c6.jpg</image>
+    <image>https://cdn.zyrosite.com/cdn-ecommerce/store_01K8TJ7Z5JW7HSEJN7SFYG20CX/assets/8da87958-5134-4d18-936e-4df20ffc120b.jpg</image>
     <availability>in_stock</availability>
     <delivery>Pristatymo informacija pateikiama parduotuvėje</delivery>
   </product>
