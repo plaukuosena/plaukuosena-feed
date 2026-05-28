@@ -423,7 +423,7 @@ def xml_text_el(parent: ET.Element, name: str, value: str) -> ET.Element:
     return el
 
 
-ddef cdata(text: str) -> str:
+def cdata(text: str) -> str:
     text = text or ""
     return f"<![CDATA[{text}]]>"
 
