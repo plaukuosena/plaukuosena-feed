@@ -96,7 +96,8 @@ def fetch_text(url: str, timeout: int = 25) -> str:
         )
 
     r.raise_for_status()
-    return r.text
+r.encoding = "utf-8"
+return r.text
 
 
 def normalize_text(value: str | None) -> str:
@@ -422,25 +423,29 @@ def xml_text_el(parent: ET.Element, name: str, value: str) -> ET.Element:
     return el
 
 
+ddef cdata(text: str) -> str:
+    text = text or ""
+    return f"<![CDATA[{text}]]>"
+
+
 def write_kaina24_xml(products: list[Product], path: Path, cfg: dict[str, Any]) -> None:
-    root = ET.Element("products")
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<products>']
+
     for p in products:
-        item = ET.SubElement(root, "product")
-        xml_text_el(item, "id", p.sku)
-        xml_text_el(item, "sku", p.sku)
-        xml_text_el(item, "title", p.title)
-        xml_text_el(item, "description", p.description)
-        xml_text_el(item, "brand", p.brand)
-        xml_text_el(item, "category", p.category)
-        xml_text_el(item, "price", p.price)
-        xml_text_el(item, "currency", p.currency)
-        xml_text_el(item, "url", p.url)
-        xml_text_el(item, "image", p.image)
-        xml_text_el(item, "availability", p.availability)
-        xml_text_el(item, "delivery", cfg.get("shipping", {}).get("text", ""))
-    tree = ET.ElementTree(root)
-    ET.indent(tree, space="  ", level=0)
-    tree.write(path, encoding="utf-8", xml_declaration=True)
+        lines.append(f'  <product id="{p.sku}">')
+        lines.append(f'    <title>{cdata(p.title)}</title>')
+        lines.append(f'    <price>{p.price}</price>')
+        lines.append(f'    <link>{cdata(p.url)}</link>')
+        lines.append(f'    <image>{cdata(p.image)}</image>')
+        lines.append(f'    <brand>{cdata(p.brand)}</brand>')
+        lines.append(f'    <category>{cdata(p.category)}</category>')
+        lines.append(f'    <description>{cdata(p.description)}</description>')
+        lines.append(f'    <availability>{p.availability}</availability>')
+        lines.append('  </product>')
+
+    lines.append('</products>')
+
+    path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> int:
