@@ -416,22 +416,44 @@ def cdata(text: str) -> str:
     return f"<![CDATA[{text}]]>"
 
 
-def write_kaina24_xml(products: list[Product], path: Path, cfg: dict[str, Any]) -> None:
+ddef write_kaina24_xml(products: list[Product], path: Path, cfg: dict[str, Any]) -> None:
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<products>']
 
     for p in products:
         lines.append(f'  <product id="{p.sku}">')
+
         lines.append(f'    <title>{cdata(p.title)}</title>')
-        lines.append(f'    <price>{p.price}</price>')
-        lines.append(f'    <link>{cdata(p.url)}</link>')
-        lines.append(f'    <image>{cdata(p.image)}</image>')
-        lines.append(f'    <brand>{cdata(p.brand)}</brand>')
-        lines.append(f'    <category>{cdata(p.category)}</category>')
         lines.append(f'    <description>{cdata(p.description)}</description>')
-        lines.append(f'    <availability>{p.availability}</availability>')
+
+        lines.append(f'    <price>{p.price}</price>')
+
+        lines.append('    <condition>new</condition>')
+
+        lines.append('    <stock>5</stock>')
+
+        lines.append(f'    <manufacturer>{cdata(p.brand)}</manufacturer>')
+
+        lines.append(f'    <image_url>{cdata(p.image)}</image_url>')
+
+        lines.append(f'    <product_url>{cdata(p.url)}</product_url>')
+
+        lines.append(f'    <category_name>{cdata(p.category)}</category_name>')
+
+        lines.append('    <delivery>')
+        lines.append('      <home_delivery>')
+        lines.append('        <working_days><![CDATA[2]]></working_days>')
+        lines.append('        <price><![CDATA[3.99]]></price>')
+        lines.append('      </home_delivery>')
+        lines.append('    </delivery>')
+
         lines.append('  </product>')
 
     lines.append('</products>')
+
+    xml_content = "\n".join(lines)
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(xml_content)
 
     path.write_text("\n".join(lines), encoding="utf-8")
 
