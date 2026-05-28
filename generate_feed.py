@@ -75,29 +75,17 @@ def load_config() -> dict[str, Any]:
 
 
 def fetch_text(url: str, timeout: int = 25) -> str:
-    session = requests.Session()
-
-    r = session.get(
+    r = requests.get(
         url,
         headers=HEADERS,
         timeout=timeout,
         verify=False
     )
 
-    if r.status_code == 403:
-        alt_headers = HEADERS.copy()
-        alt_headers["Referer"] = "https://www.google.com/"
-
-        r = session.get(
-            url,
-            headers=alt_headers,
-            timeout=timeout,
-            verify=False
-        )
-
     r.raise_for_status()
-r.encoding = "utf-8"
-return r.text
+    r.encoding = "utf-8"
+
+    return r.text
 
 
 def normalize_text(value: str | None) -> str:
