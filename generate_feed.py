@@ -416,7 +416,7 @@ def cdata(text: str) -> str:
     return f"<![CDATA[{text}]]>"
 
 
-ddef write_kaina24_xml(products: list[Product], path: Path, cfg: dict[str, Any]) -> None:
+def write_kaina24_xml(products: list[Product], path: Path, cfg: dict[str, Any]) -> None:
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<products>']
 
     for p in products:
