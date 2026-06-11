@@ -24,6 +24,7 @@ import re
 import sys
 import time
 import unicodedata
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Any, Iterable
@@ -676,12 +677,41 @@ def write_kaina24_xml(products: list[Product], path: Path, cfg: dict[str, Any]) 
 
     path.write_text("\n".join(lines), encoding="utf-8")
 
+def product_urls_from_kaina24_xml() -> list[str]:
+    path = ROOT / "kaina24.xml"
+    if not path.exists():
+        return []
+
+    try:
+        tree = ET.parse(path)
+        root = tree.getroot()
+        urls = []
+
+        for el in root.iter():
+            if el.tag.endswith("product_url") and el.text:
+                url = el.text.strip()
+                if url:
+                    urls.append(url)
+
+        return list(dict.fromkeys(urls))
+    except Exception:
+        return []
 
 def main() -> int:
     cfg = load_config()
+
+sitemap = None
+try:
     sitemap = fetch_text(cfg["store"]["sitemap_url"])
+except Exception:
+    sitemap = None
+
+if sitemap:
     all_urls = sitemap_urls(sitemap)
     product_urls = [url for url in all_urls if likely_product_url(url, cfg)]
+else:
+    product_urls = product_urls_from_kaina24_xml()
+    all_urls = product_urls
 
     print(
         f"Found {len(all_urls)} sitemap URLs; "
