@@ -754,7 +754,7 @@ else:
     print(f"Generated {len(products)} products")
     print(f"XML: {ROOT / out_cfg.get('xml_file', 'kaina24.xml')}")
 
-    return 0
+     return 0
 
 if __name__ == "__main__":
     raise SystemExit(main())
