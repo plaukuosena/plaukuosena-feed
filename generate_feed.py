@@ -700,21 +700,21 @@ def product_urls_from_kaina24_xml() -> list[str]:
 def main() -> int:
     cfg = load_config()
 
-sitemap = None
-try:
-    sitemap = fetch_text(cfg["store"]["sitemap_url"])
-except Exception:
     sitemap = None
+    try:
+        sitemap = fetch_text(cfg["store"]["sitemap_url"])
+    except Exception:
+        sitemap = None
 
-if sitemap:
-    all_urls = sitemap_urls(sitemap)
-    product_urls = [url for url in all_urls if likely_product_url(url, cfg)]
-else:
-    product_urls = product_urls_from_kaina24_xml()
-    all_urls = product_urls
+    if sitemap:
+        all_urls = sitemap_urls(sitemap)
+        product_urls = [url for url in all_urls if likely_product_url(url, cfg)]
+    else:
+        product_urls = product_urls_from_kaina24_xml()
+        all_urls = product_urls
 
     print(
-        f"Found {len(all_urls)} sitemap URLs; "
+        f"Found {len(all_urls)} sitemap/fallback URLs; "
         f"{len(product_urls)} likely product URLs"
     )
 
@@ -754,7 +754,8 @@ else:
     print(f"Generated {len(products)} products")
     print(f"XML: {ROOT / out_cfg.get('xml_file', 'kaina24.xml')}")
 
-     return 0
+    return 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
