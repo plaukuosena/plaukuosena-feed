@@ -700,11 +700,10 @@ def product_urls_from_kaina24_xml() -> list[str]:
 def main() -> int:
     cfg = load_config()
 
-    sitemap = None
     try:
-        sitemap = fetch_text(cfg["store"]["sitemap_url"])
-    except Exception:
-        sitemap = None
+    sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+except Exception:
+    sitemap = None
 
     if sitemap:
         all_urls = sitemap_urls(sitemap)
